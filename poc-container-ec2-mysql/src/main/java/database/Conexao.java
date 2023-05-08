@@ -19,7 +19,7 @@ public class Conexao {
         BasicDataSource dataSource = new BasicDataSource();
 
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://54.196.255.66:3306/ContainerBD");
+        dataSource.setUrl("jdbc:mysql://54.163.211.188:3306/ContainerBD");
         dataSource.setUsername("root");
         dataSource.setPassword("#Gfteste");
 

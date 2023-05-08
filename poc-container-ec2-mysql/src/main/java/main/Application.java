@@ -18,13 +18,9 @@ public class Application {
 
         UsuarioRepository usuarioRepository = new UsuarioRepository();
 
-        new Timer().scheduleAtFixedRate(new TimerTask() {
+        System.out.println("Olá! Você conseguiu acessar a applicação Java na EC2!");
 
-            @Override
-            public void run() {
-                usuarioRepository.inserirDadosUsuario();
-            }
-        }, 0, 3000);
+        usuarioRepository.inserirDadosUsuario();
     }
 
 }

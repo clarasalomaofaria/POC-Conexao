@@ -25,6 +25,9 @@ public class UsuarioRepository {
         con.update("INSERT INTO usuario VALUES (null, ?)",
                 "Clara");
 
+    }
+
+    public void inserirDadosUsuarioAzure() {
         conAzure.update("INSERT INTO usuario VALUES (null, ?)",
                 "Clara");
     }

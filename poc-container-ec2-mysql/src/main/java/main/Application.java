@@ -21,6 +21,7 @@ public class Application {
         System.out.println("Olá! Você conseguiu acessar a applicação Java na EC2!");
 
         usuarioRepository.inserirDadosUsuario();
+        usuarioRepository.inserirDadosUsuarioAzure();
     }
 
 }

@@ -4,7 +4,6 @@
  */
 package repository;
 
-import database.Conexao;
 import database.ConexaoAzure;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -14,18 +13,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class UsuarioRepository {
 
-    Conexao conexao = new Conexao();
-    JdbcTemplate con = conexao.getConexaoBanco();
-
     ConexaoAzure conexaoAzure = new ConexaoAzure();
     JdbcTemplate conAzure = conexaoAzure.getConexaoDoBanco();
-
-    public void inserirDadosUsuario() {
-
-        con.update("INSERT INTO usuario VALUES (null, ?)",
-                "Clara");
-
-    }
 
     public void inserirDadosUsuarioAzure() {
         conAzure.update("INSERT INTO usuario VALUES (null, ?)",

@@ -5,7 +5,12 @@
     <artifactId>poc-container-ec2-mysql</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
@@ -23,20 +28,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.26</version>
         </dependency>
-         <!-- SQL Server -->
+        <!-- SQL Server -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
             <version>7.2.2.jre8</version>
-            <!-- ou versão 7.2.2.jre11, se sua JDK for a 11 -->
-            <!-- ou versão que já existir na .m2 local -->
         </dependency>
     </dependencies>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
     <build>
         <plugins>
             <plugin>
